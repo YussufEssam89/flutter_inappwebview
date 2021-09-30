@@ -501,9 +501,7 @@ public class InAppWebView: WKWebView, UIScrollViewDelegate, WKUIDelegate, WKNavi
                 }
                 
                 if !options.applicationNameForUserAgent.isEmpty {
-                    if let applicationNameForUserAgent == configuration.applicationNameForUserAgent {
-                        configuration.applicationNameForUserAgent = applicationNameForUserAgent + " " + options.applicationNameForUserAgent
-                    }
+                    configuration.applicationNameForUserAgent = options.applicationNameForUserAgent
                 }
             }
             
